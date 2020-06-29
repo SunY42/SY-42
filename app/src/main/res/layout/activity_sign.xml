@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_y"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Let10Net.SignActivity">
+    <TextView
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="125dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="用户名:"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/btn_name"
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="-55dp"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:editable="true"
+        android:hint="请输入用户名"
+        android:singleLine="true"
+        android:textSize="28dp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:text="密    码:"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/btn_num"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="-55dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="28dp" />
+    <Button
+        android:id="@+id/btn_sign"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorPrimary"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

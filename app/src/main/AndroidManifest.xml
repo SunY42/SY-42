@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sy42app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_sy"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_sy"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Let10Net.SetActivity"></activity>
+        <activity android:name=".Let10Net.list.NetListActivity" />
+        <activity android:name=".Let10Net.WebActivity"
+            android:theme="@style/ActNoActionBar"/>
+        <activity android:name=".Let10Net.NetActivity"/>
+        <activity android:name=".Let10Net.SignActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
